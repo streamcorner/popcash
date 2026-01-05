@@ -19,7 +19,7 @@ jobs:
           POPCASH_WID: ${{ secrets.POPCASH_WID }}
           POPCASH_TOKEN: ${{ secrets.POPCASH_TOKEN }}
         run: |
-          curl -f -o popcash.js "https://api-js.popcash.net/getCode?uid=${POPCASH_UID}&wid=${POPCASH_WID}&apikey=${POPCASH_TOKEN}&pop_fback=up&pop_fcap=1&pop_delay=0"
+          curl -f -o popcash.js "https://api-js.popcash.net/getCode?uid=${POPCASH_UID}&wid=${POPCASH_WID}&apikey=${POPCASH_TOKEN}&pop_fback=up&pop_fcap=5&pop_delay=0"
           
       - name: Commit and push
         run: |
